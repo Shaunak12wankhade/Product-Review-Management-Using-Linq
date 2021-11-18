@@ -10,7 +10,7 @@ namespace PRManagementusinglinq
         {
             //Console.WriteLine("Welcome to product review management");
 
-            //UC1
+
             List<ProductReview> productReviewList = new List<ProductReview>()
             {
                 new ProductReview(){ProductId = 1, UserID=1, Rating = 5, Review ="Good",isLike = true },
@@ -45,8 +45,7 @@ namespace PRManagementusinglinq
             foreach (var list in productReviewList)
             {
                 Console.WriteLine("ProductID:-" + list.ProductId + " " + "UserID:" + list.UserID +
-                    " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Review + " " +
-                    "People liked:-" + list.isLike);
+                    " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Review + " " +  "People liked:-" + list.isLike);
             }
         }
     }
